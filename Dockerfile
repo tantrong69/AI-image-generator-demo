@@ -24,7 +24,7 @@ RUN uv venv --python 3.11 /.venv
 RUN uv pip install torch --extra-index-url https://download.pytorch.org/whl/cu121 diffusers transformers accelerate safetensors xformers==0.0.23 runpod numpy==1.26.3 scipy triton huggingface-hub hf_transfer setuptools Pillow
 
 # copy files
-COPY download_weights.py schemas.py handler.py test_input.json /
+COPY download_weights.py schemas.py handler.py test_input.json
 
 # download the weights from hugging face
 RUN python /download_weights.py
