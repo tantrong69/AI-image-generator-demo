@@ -27,7 +27,7 @@ RUN uv pip install torch --extra-index-url https://download.pytorch.org/whl/cu12
 COPY download_weights.py schemas.py handler.py test_input.json /
 
 # download the weights from hugging face
-RUN python /download_weights.py
+RUN python download_weights.py
 
 # run the handler
 CMD python -u /handler.py
