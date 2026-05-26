@@ -23,10 +23,7 @@ RUN python3.11 -m pip install --upgrade pip && \
 #       It is reccommended to specify the version of Python when running your code.
 
 
-# Add src files (Worker Template)
-ADD src .
-
-COPY src/handler.py handler.py
+COPY handler.py .
 
 RUN python3.11 handler.py
 
