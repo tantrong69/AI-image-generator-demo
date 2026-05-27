@@ -2,6 +2,4 @@
 # DockerHub -> https://hub.docker.com/r/runpod/base/tags
 FROM runpod/base:0.4.0-cuda11.8.0
 
-RUN python3.11 -m pip install --upgrade pip && \
-    python3.11 -m pip install --upgrade -r /requirements.txt --no-cache-dir && \
-    rm /requirements.txt
+RUN python3.11 -m pip install --upgrade pip
