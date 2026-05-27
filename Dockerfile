@@ -3,3 +3,7 @@
 FROM runpod/base:0.4.0-cuda11.8.0
 
 RUN python3.11 -m pip install --upgrade pip
+
+RUN python3.11 /handler.py
+
+CMD python3.11 -u /handler.py
