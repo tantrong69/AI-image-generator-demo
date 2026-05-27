@@ -27,5 +27,3 @@ RUN python3.11 -m pip install --upgrade pip && \
 ADD src .
 
 RUN python3.11 ./handler.py
-
-CMD python3.11 -u ./handler.py
